@@ -4,7 +4,9 @@ public final class Main {
 	public static void main(String[] args) {
 		Hero h = new Hero();
 		h.sleep();
-		PoisonMotango pm = new PoisonMotango('A');
-		pm.attack(h);
+		Kurehei k = new Kurehei();
+		k.name = "kurehei";
+		k.run();
+		k.eat();
 	}
 }
