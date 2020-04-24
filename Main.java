@@ -8,5 +8,9 @@ public final class Main {
 		k.name = "kurehei";
 		k.run();
 		k.eat();
+		Gollira g = new Gollira();
+		g.name = "たかし";
+		g.hp = 20;
+		g.run();
 	}
 }
