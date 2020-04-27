@@ -1,7 +1,13 @@
 public class Hero {
-	String name;
-	int hp;
-
+	// 原則フィールドは、private化する
+	private String name;
+	private int hp;
+	// getterメソッドの指定
+	public String getName() {return this.name; }
+	 // setterメソッドの指定
+	public void setName(String name) {
+	  this.name = name;
+	}
 	// クラス型の情報を持っている
 	// コンストラクトとは、インスタンスを生成した瞬間に実行されるメソッド
 	// コンストラクで、引数に追加条件を与える。

@@ -2,15 +2,13 @@
 public final class Main {
 	// finalをclassの前につけると、継承ができなくなる。。
 	public static void main(String[] args) {
-		Hero h = new Hero();
-		h.sleep();
-		Kurehei k = new Kurehei();
-		k.name = "kurehei";
-		k.run();
-		k.eat();
-		Gollira g = new Gollira();
-		g.name = "たかし";
-		g.hp = 20;
-		g.run();
+		Character c = new Wizard();
+		Wizard w = (Wizard)c;
+		Motango m = new Motango('a');
+		c.name = "あさか";
+		c.attack(m);
+		// ここでエラー
+		c.fireball(m);
+
 	}
 }
