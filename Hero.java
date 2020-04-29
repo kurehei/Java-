@@ -47,4 +47,19 @@ public class Hero {
 		System.out.println("GAMEOVER");
 		System.out.println("最終的なHP" + this.hp + "でした");
 	}
+
+	public String toString() {
+	  return this.name + this.hp;
+	}
+	// equalsメソッドを等価判定になるように、オーバーライドする
+	public boolean equals(Object o) {
+	  if(this == o) { return true; }
+	  if (o instanceof Hero) {
+		Hero h = (Hero)o;
+		if (h.name.equals(h.name)){
+		  return true;
+		}
+	  }
+	  return false;
+	}
 }
